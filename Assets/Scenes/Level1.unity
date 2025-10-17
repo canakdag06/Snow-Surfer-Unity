@@ -499,6 +499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8657569e4bdaaec4f801cff5fc97aedf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reloadDelay: 2
 --- !u!70 &795054998
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
