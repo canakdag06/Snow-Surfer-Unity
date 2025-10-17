@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class FinishLine : MonoBehaviour
         if(collision.gameObject.layer == playerLayer)
         {
             Debug.Log("LEVEL COMPLETED!");
+            SceneManager.LoadScene(0);
         }
     }
 }

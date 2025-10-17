@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CrashDetector : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class CrashDetector : MonoBehaviour
         if (collision.gameObject.layer == layerIndex)
         {
             Debug.Log("LEVEL FAILED...");
+            SceneManager.LoadScene(0);
         }
     }
 }
