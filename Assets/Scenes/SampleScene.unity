@@ -384,6 +384,7 @@ GameObject:
   - component: {fileID: 795054992}
   - component: {fileID: 795054994}
   - component: {fileID: 795054995}
+  - component: {fileID: 795054996}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -419,7 +420,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -471,6 +472,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0.06, y: -1.25}
   m_Size: {x: 3.25, y: 0.5}
   m_Direction: 1
+--- !u!114 &795054996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795054990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cba29463e9e1947a9da04d95c2abeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueAmount: 3
 --- !u!1 &999582534
 GameObject:
   m_ObjectHideFlags: 0
