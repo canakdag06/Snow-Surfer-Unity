@@ -497,7 +497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26cba29463e9e1947a9da04d95c2abeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torqueAmount: 3
+  torqueAmount: 11
 --- !u!114 &795054997
 MonoBehaviour:
   m_ObjectHideFlags: 0
