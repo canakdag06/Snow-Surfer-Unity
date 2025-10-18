@@ -124,6 +124,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6230004208840783988, guid: d27fba4bb35fc294dbfb0e8abfa4c325, type: 3}
   m_PrefabInstance: {fileID: 2491637181514303436}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &23677977 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3918753876138018619, guid: d27fba4bb35fc294dbfb0e8abfa4c325, type: 3}
+  m_PrefabInstance: {fileID: 2491637181514303436}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,6 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8657569e4bdaaec4f801cff5fc97aedf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crashParticle: {fileID: 23677977}
   reloadDelay: 2
 --- !u!70 &795054998
 CapsuleCollider2D:
@@ -1583,11 +1589,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6230004208840783988, guid: d27fba4bb35fc294dbfb0e8abfa4c325, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.39
       objectReference: {fileID: 0}
     - target: {fileID: 6230004208840783988, guid: d27fba4bb35fc294dbfb0e8abfa4c325, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.88
       objectReference: {fileID: 0}
     - target: {fileID: 6230004208840783988, guid: d27fba4bb35fc294dbfb0e8abfa4c325, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1648,7 +1654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6918206240346077482, guid: 13432db84705a994c88af4630f687ce9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.69
       objectReference: {fileID: 0}
     - target: {fileID: 6918206240346077482, guid: 13432db84705a994c88af4630f687ce9, type: 3}
       propertyPath: m_LocalPosition.z
