@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2701628255490696233}
   - component: {fileID: 3912501048912656988}
   m_Layer: 0
-  m_Name: Sky_0 (2)
+  m_Name: Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 6661492484408647456}
   - component: {fileID: 8246857530465707963}
   m_Layer: 0
-  m_Name: BG_0 (2)
+  m_Name: Mountain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 1115536206497552297}
   - component: {fileID: 7297041163186870689}
   m_Layer: 0
-  m_Name: BG_0 (1)
+  m_Name: Mountain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 5433557681569376627}
   - component: {fileID: 5378447295685015759}
   m_Layer: 0
-  m_Name: Middle_0
+  m_Name: Tree Images
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -423,7 +423,7 @@ GameObject:
   - component: {fileID: 3505325426406563196}
   - component: {fileID: 3231565094552829526}
   m_Layer: 0
-  m_Name: Middle_0 (1)
+  m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 8128502518102817704}
   - component: {fileID: 2629773062877894053}
   m_Layer: 0
-  m_Name: Sky_0
+  m_Name: Sky Images
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -615,7 +615,7 @@ GameObject:
   - component: {fileID: 4872028624333170495}
   - component: {fileID: 494511919523045883}
   m_Layer: 0
-  m_Name: BG_0
+  m_Name: Mountain Images
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -718,7 +718,7 @@ GameObject:
   - component: {fileID: 7713928994598559605}
   - component: {fileID: 4417533192563893654}
   m_Layer: 0
-  m_Name: Middle_0 (2)
+  m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -805,7 +805,7 @@ GameObject:
   - component: {fileID: 1981798866493749817}
   - component: {fileID: 2081703020240040617}
   m_Layer: 0
-  m_Name: Sky_0 (1)
+  m_Name: Sky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
