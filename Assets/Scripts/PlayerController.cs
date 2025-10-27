@@ -13,6 +13,9 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float torqueAmount = 10f;
     [SerializeField] private float boostAmount = 3f;
+    private float previousRotation;
+    private float totalRotation;
+    private int flipCount;
 
     public bool canControlPlayer = true;
     private bool isGrounded;
@@ -38,6 +41,8 @@ public class PlayerController : MonoBehaviour
             {
                 SpeedUp();
             }
+
+            CalculateFlips();
         }
 
     }
@@ -56,5 +61,20 @@ public class PlayerController : MonoBehaviour
     private void SpeedUp()
     {
         rb.AddRelativeForce(boostAmount * Vector2.right);
+    }
+
+    private void CalculateFlips()
+    {
+        float currentRotation = transform.rotation.eulerAngles.z;
+
+        totalRotation += Mathf.DeltaAngle(previousRotation, currentRotation);
+        if(totalRotation > 330 || totalRotation < -330)
+        {
+            flipCount++;
+            totalRotation = 0;
+            Debug.Log(flipCount);
+        }
+
+        previousRotation = currentRotation;
     }
 }
