@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class CrashDetector : MonoBehaviour
 {
+    [SerializeField] PlayerController playerController;
     [SerializeField] ParticleSystem crashParticle;
     [SerializeField] int reloadDelay;
 
@@ -15,6 +16,7 @@ public class CrashDetector : MonoBehaviour
         if (collision.gameObject.layer == layerIndex && !isCrashed)
         {
             isCrashed = true;
+            playerController.DisableControls();
             Debug.Log("LEVEL FAILED...");
             crashParticle.Play();
             Invoke("LoadLevel", reloadDelay);
