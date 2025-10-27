@@ -6,11 +6,21 @@ public class SnowTrail : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        snowParticles.Play();
+        int layerIndex = LayerMask.NameToLayer("Floor");
+
+        if (collision.gameObject.layer == layerIndex)
+        {
+            snowParticles.Play();
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        snowParticles.Stop();
+        int layerIndex = LayerMask.NameToLayer("Floor");
+
+        if (collision.gameObject.layer == layerIndex)
+        {
+            snowParticles.Stop();
+        }
     }
 }

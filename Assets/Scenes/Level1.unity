@@ -373,11 +373,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &795054990 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7687481736233766501, guid: 51ccf6dd4f7eb4a4fbd403a07db087fe, type: 3}
+  m_PrefabInstance: {fileID: 248849058880227262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &795054992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1901852294804363920, guid: 51ccf6dd4f7eb4a4fbd403a07db087fe, type: 3}
   m_PrefabInstance: {fileID: 248849058880227262}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &795054999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795054990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c2c9bede8dab9b469c0a462fb4a829d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  snowParticles: {fileID: 1124518235}
 --- !u!1 &913073841
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,6 +544,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0a4b5965b1daae48b97d9bb683a68a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!198 &1124518235 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5718862516555176340, guid: 51ccf6dd4f7eb4a4fbd403a07db087fe, type: 3}
+  m_PrefabInstance: {fileID: 248849058880227262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1945048589
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,7 +2053,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7687481736233766501, guid: 51ccf6dd4f7eb4a4fbd403a07db087fe, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 795054999}
   m_SourcePrefab: {fileID: 100100000, guid: 51ccf6dd4f7eb4a4fbd403a07db087fe, type: 3}
 --- !u!1001 &1661929183655448041
 PrefabInstance:
