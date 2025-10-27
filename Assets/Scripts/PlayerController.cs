@@ -3,15 +3,18 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public float groundCheckRadius = 0.2f;
+    public Transform groundCheck;
+    public LayerMask floorLayer;
+
     Rigidbody2D rb;
     InputAction moveAction;
     Vector2 moveVector;
 
     [SerializeField] private float torqueAmount = 10f;
     [SerializeField] private float boostAmount = 3f;
-    public Transform groundCheck;
-    public float groundCheckRadius = 0.2f;
-    public LayerMask floorLayer;
+
+    public bool canControlPlayer = true;
     private bool isGrounded;
 
     void Start()
@@ -27,12 +30,21 @@ public class PlayerController : MonoBehaviour
         //Color color = isGrounded ? Color.green : Color.red;
         //Debug.DrawRay(groundCheck.position, Vector2.down * groundCheckRadius, color);
 
-        RotatePlayer();
-
-        if (moveVector.y > 0 && isGrounded)
+        if (canControlPlayer)
         {
-            SpeedUp();
+            RotatePlayer();
+
+            if (moveVector.y > 0 && isGrounded)
+            {
+                SpeedUp();
+            }
         }
+
+    }
+
+    public void DisableControls()
+    {
+        canControlPlayer = false;
     }
 
     private void RotatePlayer()
