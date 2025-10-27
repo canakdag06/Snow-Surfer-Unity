@@ -5018,13 +5018,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26cba29463e9e1947a9da04d95c2abeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  torqueAmount: 10
-  boostAmount: 3
-  groundCheck: {fileID: 8452649953295797066}
   groundCheckRadius: 1
+  groundCheck: {fileID: 8452649953295797066}
   floorLayer:
     serializedVersion: 2
     m_Bits: 128
+  torqueAmount: 10
+  boostAmount: 3
+  canControlPlayer: 1
 --- !u!114 &332872265746276341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5037,6 +5038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8657569e4bdaaec4f801cff5fc97aedf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerController: {fileID: 491875935710188440}
   crashParticle: {fileID: 8403779445428771506}
   reloadDelay: 2
 --- !u!114 &7862415060443682900
