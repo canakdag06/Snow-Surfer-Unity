@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     InputAction moveAction;
     Vector2 moveVector;
 
+    [SerializeField] ScoreManager scoreManager;
+
     [SerializeField] private float torqueAmount = 10f;
     [SerializeField] private float boostAmount = 3f;
     private float previousRotation;
@@ -72,7 +74,7 @@ public class PlayerController : MonoBehaviour
         {
             flipCount++;
             totalRotation = 0;
-            Debug.Log(flipCount);
+            scoreManager.AddScore(100);
         }
 
         previousRotation = currentRotation;
