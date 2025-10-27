@@ -9,6 +9,7 @@ public class Powerup : MonoBehaviour
 
     private void Start()
     {
+        playerController = FindFirstObjectByType<PlayerController>();
         playerLayer = LayerMask.NameToLayer("Player");
     }
 
