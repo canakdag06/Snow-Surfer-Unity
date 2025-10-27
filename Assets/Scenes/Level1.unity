@@ -1919,6 +1919,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 491875935710188440, guid: 51ccf6dd4f7eb4a4fbd403a07db087fe, type: 3}
+      propertyPath: groundCheckRadius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1901852294804363920, guid: 51ccf6dd4f7eb4a4fbd403a07db087fe, type: 3}
       propertyPath: m_LocalPosition.x
       value: -58.58
