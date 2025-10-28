@@ -417,7 +417,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 283357885}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 574442946}
+        m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
+        m_MethodName: ChooseRex
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &283357885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,6 +468,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283357882}
   m_CullTransparentMesh: 1
+--- !u!1 &494204742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3866480495431625361, guid: 51ccf6dd4f7eb4a4fbd403a07db087fe, type: 3}
+  m_PrefabInstance: {fileID: 248849058880227262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +655,7 @@ GameObject:
   - component: {fileID: 574442944}
   - component: {fileID: 574442943}
   - component: {fileID: 574442942}
+  - component: {fileID: 574442946}
   m_Layer: 5
   m_Name: Canvas Character Selection
   m_TagString: Untagged
@@ -729,6 +747,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &574442946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574442941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a3f6b0295835a4eb6775ae708778d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreCanvas: {fileID: 900103334}
+  rexSprite: {fileID: 1370529193}
+  fredSprite: {fileID: 494204742}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,7 +1150,7 @@ GameObject:
   - component: {fileID: 879202255}
   - component: {fileID: 879202254}
   m_Layer: 5
-  m_Name: Lily Button
+  m_Name: Fred Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1187,7 +1220,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 879202255}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 574442946}
+        m_TargetAssemblyTypeName: CharacterSelection, Assembly-CSharp
+        m_MethodName: ChooseFred
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &879202255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1554,6 +1599,11 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1370529193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9104284043170327321, guid: 51ccf6dd4f7eb4a4fbd403a07db087fe, type: 3}
+  m_PrefabInstance: {fileID: 248849058880227262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1443412665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1611,7 +1661,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Lily the Frog
+  m_text: Fred the Frog
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ca56e652ce34b76438b5b2f1865b8ea4, type: 2}
   m_sharedMaterial: {fileID: -8110669390977503315, guid: ca56e652ce34b76438b5b2f1865b8ea4, type: 2}
@@ -1701,7 +1751,6 @@ GameObject:
   - component: {fileID: 1605684341}
   - component: {fileID: 1605684343}
   - component: {fileID: 1605684342}
-  - component: {fileID: 1605684344}
   m_Layer: 5
   m_Name: Choose Your Character Text
   m_TagString: Untagged
@@ -1827,23 +1876,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605684340}
   m_CullTransparentMesh: 1
---- !u!111 &1605684344
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1605684340}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Animation: {fileID: 7400000, guid: 7abb7b8866bb687488d8888507dbf374, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 7abb7b8866bb687488d8888507dbf374, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_UpdateMode: 0
-  m_CullingType: 0
 --- !u!1 &1678499959
 GameObject:
   m_ObjectHideFlags: 0
@@ -3429,9 +3461,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3866480495431625361, guid: 51ccf6dd4f7eb4a4fbd403a07db087fe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7687481736233766501, guid: 51ccf6dd4f7eb4a4fbd403a07db087fe, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104284043170327321, guid: 51ccf6dd4f7eb4a4fbd403a07db087fe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
