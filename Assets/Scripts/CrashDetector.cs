@@ -17,7 +17,6 @@ public class CrashDetector : MonoBehaviour
         {
             isCrashed = true;
             playerController.DisableControls();
-            Debug.Log("LEVEL FAILED...");
             crashParticle.Play();
             Invoke("LoadLevel", reloadDelay);
         }

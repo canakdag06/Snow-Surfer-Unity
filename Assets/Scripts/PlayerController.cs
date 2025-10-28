@@ -17,7 +17,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float boostAmount = 3f;
     private float previousRotation;
     private float totalRotation;
-    private int flipCount;
 
     public bool canControlPlayer = true;
     private bool isGrounded;
@@ -32,8 +31,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, floorLayer);
-        //Color color = isGrounded ? Color.green : Color.red;
-        //Debug.DrawRay(groundCheck.position, Vector2.down * groundCheckRadius, color);
 
         if (canControlPlayer)
         {
@@ -57,7 +54,7 @@ public class PlayerController : MonoBehaviour
     public void ActivatePowerup(PowerupSO powerup)
     {
         powerupParticle.Play();
-        switch(powerup.GetPowerupType())
+        switch (powerup.GetPowerupType())
         {
             case "torque":  // i know its bad practise
                 torqueAmount += powerup.GetValueChange(); break;
@@ -67,7 +64,7 @@ public class PlayerController : MonoBehaviour
     public void DeactivePowerup(PowerupSO powerup)
     {
         powerupParticle.Stop();
-        switch(powerup.GetPowerupType())
+        switch (powerup.GetPowerupType())
         {
             case "torque":
                 torqueAmount -= powerup.GetValueChange(); break;
@@ -90,9 +87,8 @@ public class PlayerController : MonoBehaviour
         float currentRotation = transform.rotation.eulerAngles.z;
 
         totalRotation += Mathf.DeltaAngle(previousRotation, currentRotation);
-        if(totalRotation > 330 || totalRotation < -330)
+        if (totalRotation > 330 || totalRotation < -330)
         {
-            flipCount++;
             totalRotation = 0;
             scoreManager.AddScore(100);
         }

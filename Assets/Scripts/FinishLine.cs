@@ -13,9 +13,8 @@ public class FinishLine : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.layer == playerLayer)
+        if (collision.gameObject.layer == playerLayer)
         {
-            Debug.Log("LEVEL COMPLETED!");
             SceneManager.LoadScene(0);
         }
     }
