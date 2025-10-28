@@ -63,6 +63,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void DeactivePowerup(PowerupSO powerup)
+    {
+        switch(powerup.GetPowerupType())
+        {
+            case "torque":
+                torqueAmount -= powerup.GetValueChange(); break;
+        }
+    }
+
     private void RotatePlayer()
     {
         moveVector = moveAction.ReadValue<Vector2>();
