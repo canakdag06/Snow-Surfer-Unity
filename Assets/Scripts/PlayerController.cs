@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     Vector2 moveVector;
 
     [SerializeField] ScoreManager scoreManager;
-
+    [SerializeField] ParticleSystem powerupParticle;
     [SerializeField] private float torqueAmount = 10f;
     [SerializeField] private float boostAmount = 3f;
     private float previousRotation;
@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
 
     public void ActivatePowerup(PowerupSO powerup)
     {
+        powerupParticle.Play();
         switch(powerup.GetPowerupType())
         {
             case "torque":  // i know its bad practise
@@ -65,6 +66,7 @@ public class PlayerController : MonoBehaviour
 
     public void DeactivePowerup(PowerupSO powerup)
     {
+        powerupParticle.Stop();
         switch(powerup.GetPowerupType())
         {
             case "torque":
