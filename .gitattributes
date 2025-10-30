@@ -1,2 +1,9 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Force GitHub to treat all C# scripts as the primary language
+*.cs linguist-detectable=true
+*.shader linguist-detectable=false
+*.mat linguist-detectable=false
+*.meta linguist-detectable=false
+*.unity linguist-detectable=false
+*.prefab linguist-detectable=false
