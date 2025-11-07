@@ -1,4 +1,4 @@
-# ❄️ Snow Surfer
+# Snow Surfer
 
 A physics-based **2D snowboarding game**, built with **Unity** while following  
 the *“Complete C# Unity 2D Game Development”* course by **GameDev.tv**.
