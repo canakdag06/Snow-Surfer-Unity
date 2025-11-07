@@ -45,6 +45,6 @@ You can watch the gameplay video [here](https://www.youtube.com/watch?v=fMijSvzE
 ## 📚 Credits
 
 ### Visual Assets
-- Most assets provided by Gamedev.tv
+- Most assets were provided by Gamedev.tv
 - "Winter Holiday 2D Backgrounds" by [CraftPix.net 2D Game Assets](https://opengameart.org/content/winter-holiday-2d-backgrounds)
 - "Winter Path" font by [Khurasan](https://www.dafont.com/winter-path.font?l%5B%5D=10&l%5B%5D=1)
